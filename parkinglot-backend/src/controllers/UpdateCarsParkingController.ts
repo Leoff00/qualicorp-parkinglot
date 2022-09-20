@@ -8,9 +8,9 @@ export class UpdateCarsParkingController {
     const parkingRepository = new ParkingRepository();
     const findAllCarsParkingService = new UpdateCarsParkingService(parkingRepository);
     const { user_id } = request.params as RequestUserId;
-    const { name, lastName, carPlate } = request.body as RequestDTOUpdate;
+    const { name, lastName, departureDate } = request.body as RequestDTOUpdate;
 
-    await findAllCarsParkingService.execute(user_id, { name, lastName, carPlate });
+    await findAllCarsParkingService.execute(user_id, { name, lastName, departureDate });
 
     return response.status(200).json("Data succesfully setted");
   }

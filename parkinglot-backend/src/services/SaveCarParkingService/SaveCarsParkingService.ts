@@ -1,3 +1,4 @@
+import { randomUUID } from "crypto";
 import { ResponseSaveCarParkingDTO } from "@DTOs/RequestsDTO";
 import { ParkingEntity } from "@entities/ParkingEntity";
 import { IParkingRepository } from "@repositories/interface/IParkingRepository";
@@ -12,6 +13,7 @@ export class SaveCarsParkingService {
     carPlate,
     arrivalDate,
     departureDate,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     user_id,
   }: ParkingEntity): Promise<ResponseSaveCarParkingDTO[]> {
     const salt = await genSalt(8);
@@ -24,9 +26,8 @@ export class SaveCarsParkingService {
       carPlate,
       arrivalDate,
       departureDate,
-      user_id,
+      user_id: randomUUID(),
     });
-
     const reduceObject = saved.map((response) => {
       return {
         name: response.name,

@@ -54,12 +54,12 @@ export class ParkingRepository implements IParkingRepository {
     }
   }
 
-  public async updateCars(user_id: string, { name, lastName, carPlate }: CarUpdateProps): Promise<void> {
+  public async updateCars(user_id: string, { name, lastName, departureDate }: CarUpdateProps): Promise<void> {
     const params = {
       user_id,
       name,
       lastName,
-      carPlate,
+      departureDate,
     };
     const { driver } = await Driver();
     try {

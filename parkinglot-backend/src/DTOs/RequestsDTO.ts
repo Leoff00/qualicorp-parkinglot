@@ -5,13 +5,13 @@ export type RequestSaveCarParkingDTO = {
   password: string;
   carPlate: string;
   arrivalDate: Date | number;
-  departureDate: Date | number;
+  departureDate: Date | number | string;
 };
 
 export type RequestDTOUpdate = {
   name: string;
   lastName: string;
-  carPlate: string;
+  departureDate: Date | string | number;
 };
 
 export type RequestUserId = {

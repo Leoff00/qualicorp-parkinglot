@@ -5,7 +5,7 @@ export class ParkingEntity {
   password: string;
   carPlate: string;
   arrivalDate: Date | number;
-  departureDate: Date | number;
+  departureDate: Date | number | string;
 
   constructor(
     name: string,
@@ -13,7 +13,7 @@ export class ParkingEntity {
     password: string,
     carPlate: string,
     arrivalDate: Date | number,
-    departureDate: Date | number,
+    departureDate: Date | number | string,
     user_id?: string
   ) {
     this.name = name;
@@ -26,4 +26,4 @@ export class ParkingEntity {
   }
 }
 
-export type CarUpdateProps = Pick<ParkingEntity, "name" | "lastName" | "carPlate">;
+export type CarUpdateProps = Pick<ParkingEntity, "name" | "lastName" | "departureDate">;
