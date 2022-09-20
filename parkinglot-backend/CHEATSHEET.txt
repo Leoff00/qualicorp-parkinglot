@@ -1,0 +1,17 @@
+
+//MATCH
+Comando como uma especie de select: MATCH (n: node) e tem a opção de retornar um resultado
+exemplo -> MATCH (Parking) return Parking.carPlate
+
+//CREATE
+Comando para criar novos nodes CREATE (n de Node: Nome do node {campos relacionados ao node}) 
+exemplo -> CREATE (n: Person {name: "foo", lastName: "bar"})
+
+//DETACH-DELETE
+Comando para dropar nodes match(encontrar)  (nome do node)  detach delete Parking
+exemplo -> MATCH (n: Parking) detach delete Parking
+
+
+//ORDER BY 
+Comando para ordenar as listas no banco
+exemplo -> match (p: Parking) return p.name, p.last order by p.name

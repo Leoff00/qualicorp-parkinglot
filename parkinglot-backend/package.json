@@ -1,0 +1,48 @@
+{
+  "name": "pointsystem-backend",
+  "version": "1.0.0",
+  "description": "System that check if an user has submitted hours appointment",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/server.ts",
+    "lint": "eslint src/",
+    "build": "tsc && tsc-alias",
+    "test": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leoff00/pointsystem-qualicorp.git"
+  },
+  "keywords": [
+    "point",
+    "system",
+    "appointment"
+  ],
+  "author": " <Leonardo Ferreira leof0180@gmail.com>",
+  "license": "Apache-2.0 license",
+  "bugs": {
+    "url": "https://github.com/Leoff00/pointsystem-qualicorp/issues"
+  },
+  "homepage": "https://github.com/Leoff00/pointsystem-qualicorp#readme",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "@vitest/coverage-c8": "^0.23.2",
+    "eslint": "^8.23.1",
+    "ts-node-dev": "^2.0.0",
+    "tsc-alias": "^1.7.0",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.8.3",
+    "vite-tsconfig-paths": "^3.5.0",
+    "vitest": "^0.23.2"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1"
+  }
+}
