@@ -1,16 +1,45 @@
-# Vue 3 + TypeScript + Vite
+# Car flow - Frontend - Vue TS + Vuetify + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Projeto desenvolvido para o desafio da QualiCorp com as devidas e respectivas demandas
 
-## Recommended IDE Setup
+### Screenshot: 
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+![app](/parkinglot-frontend/.github/app.png)
+#
+### Tecnologias: 
+- [Typescript](https://www.typescriptlang.org)
+- [Vue](https://vuejs.org)
+- [Vuetify](https://vuetifyjs.com/en/)
+- [Vite](https://vitejs.dev)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+#
 
-## Type Support For `.vue` Imports in TS
+Este é um projeto usando SPA (Single Page Application) em Vue + Vuetify + Vite.
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+### Inicializando o projeto
+Para executar o projeto em ambiente de desenvolvimento digite:
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+```js
+npm run dev
+```
+para buildar para produção:
+```js
+npm run build
+```
+#
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+### Feedbacks de implementação:
+
+Logo no momento da instalação do vue, percebi que o workflow é bem mais simples em comparação ao React. com excessões de algumas particularidades do framework, consegui prosseguir normalmente com o desenvolvimento, a biblioteca vuetify também ajudou bastante na construção da interface e facilitando mais ainda o desenvolvimento da aplicação.
+
+
+As particularidades que citei acima foram em relação ao workflow de options API, percebi que existem duas formas de desenvolvimento, mas optei pela mais simples a que eu consegui entender no momento. De qualquer forma não senti tanta dificuldade ao desenvolver, mas precisei ler bastante sobre o metodo **watch e mounted**, ja que os dois funcionam de certa forma semelhante ao useEffect do React.
+
+Concluindo, a aplicação em si é bem enxuta e fiz algumas melhorias para deixa-la simples e coesa.
+#
+
+### Variáveis de ambiente: 
+VITE_APP_BACKEND_URL= url para se conectar com o backend por default http://localhost:3000
+
+### <center>Desenvolvido por Leonardo Ferreira - Desafio QualiCorp - 2022</center>
+

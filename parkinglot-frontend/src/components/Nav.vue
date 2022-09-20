@@ -14,7 +14,6 @@
   </v-container>
 </template>
 <script lang="ts">
-
 import { defineComponent } from 'vue';
 import car from "../assets/car.svg"
 export default defineComponent({
@@ -26,7 +25,7 @@ export default defineComponent({
   }
 })
 </script>
-  
+
 <style scoped>
 .v-img {
   width: 64px;
@@ -60,7 +59,6 @@ export default defineComponent({
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .v-container {
@@ -68,4 +66,3 @@ export default defineComponent({
   background-color: #2f2f2f;
 }
 </style>
-  
